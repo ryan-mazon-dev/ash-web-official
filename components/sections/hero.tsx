@@ -6,17 +6,17 @@ export function HeroSection() {
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-secondary rounded-full">
-            <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-secondary border border-primary/20 rounded-full">
+            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
             <span className="text-sm font-medium text-secondary-foreground">
-              Simplifying insurance verification
+              HIPAA Compliant Insurance Verification
             </span>
           </div>
           
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance">
             Know Your Coverage.
             <br />
-            <span className="text-muted-foreground">Before You Book.</span>
+            <span className="text-primary">Before You Book.</span>
           </h1>
           
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -54,12 +54,12 @@ export function HeroSection() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-semibold text-card-foreground">Provider Verification</h3>
-                    <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full">3 pending</span>
+                    <span className="text-xs px-2 py-1 bg-warning/10 text-warning rounded-full font-medium">3 pending</span>
                   </div>
                   {[
-                    { name: "Dr. Sarah Chen, MD", specialty: "Dermatology", status: "Verified", statusColor: "bg-green-500" },
-                    { name: "Austin Physical Therapy", specialty: "Physical Therapy", status: "Pending", statusColor: "bg-amber-500" },
-                    { name: "Metro Imaging Center", specialty: "Radiology", status: "Pending", statusColor: "bg-amber-500" },
+                    { name: "Dr. Sarah Chen, MD", specialty: "Dermatology", status: "Verified", statusColor: "bg-success" },
+                    { name: "Austin Physical Therapy", specialty: "Physical Therapy", status: "Pending", statusColor: "bg-warning" },
+                    { name: "Metro Imaging Center", specialty: "Radiology", status: "Pending", statusColor: "bg-warning" },
                   ].map((provider, i) => (
                     <div key={i} className="p-4 bg-secondary/50 rounded-xl flex items-center justify-between">
                       <div>
@@ -84,7 +84,7 @@ export function HeroSection() {
                     </div>
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="text-muted-foreground">In-Network Found</span>
-                      <span className="font-medium text-green-600">1 provider</span>
+                      <span className="font-medium text-success">1 provider</span>
                     </div>
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="text-muted-foreground">Verification Time</span>
@@ -92,7 +92,7 @@ export function HeroSection() {
                     </div>
                     <div className="flex justify-between items-center py-3">
                       <span className="text-muted-foreground">Est. Savings</span>
-                      <span className="font-medium text-accent">$2,400+</span>
+                      <span className="font-medium text-primary">$2,400+</span>
                     </div>
                   </div>
                 </div>

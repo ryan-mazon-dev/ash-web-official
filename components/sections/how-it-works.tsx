@@ -13,7 +13,7 @@ export function HowItWorksSection() {
 
         <div className="mt-16 relative">
           {/* Connection Line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-border -translate-y-1/2" />
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-primary/20 -translate-y-1/2" />
           
           <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             {howItWorks.map((step, index) => (

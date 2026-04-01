@@ -28,7 +28,7 @@ export function PricingCard({
       }`}
     >
       {highlighted && (
-        <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-medium bg-accent text-accent-foreground rounded-full">
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-semibold bg-accent text-accent-foreground rounded-full shadow-sm">
           Most Popular
         </span>
       )}
@@ -53,7 +53,7 @@ export function PricingCard({
       <ul className="flex-1 space-y-3 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start gap-3">
-            <CheckIcon className={`w-5 h-5 mt-0.5 flex-shrink-0 ${highlighted ? "text-primary-foreground" : "text-accent"}`} />
+            <CheckIcon className={`w-5 h-5 mt-0.5 flex-shrink-0 ${highlighted ? "text-primary-foreground" : "text-primary"}`} />
             <span className={`text-sm ${highlighted ? "text-primary-foreground/90" : "text-muted-foreground"}`}>
               {feature}
             </span>

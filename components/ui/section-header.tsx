@@ -9,7 +9,7 @@ export function SectionHeader({ label, title, description, centered = true }: Se
   return (
     <div className={`max-w-3xl ${centered ? "mx-auto text-center" : ""}`}>
       {label && (
-        <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-secondary text-secondary-foreground rounded-full">
+        <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-primary/10 text-primary rounded-full">
           {label}
         </span>
       )}

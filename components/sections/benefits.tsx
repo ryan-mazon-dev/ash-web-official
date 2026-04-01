@@ -15,10 +15,10 @@ export function BenefitsSection() {
           {benefits.map((benefit) => (
             <div
               key={benefit.id}
-              className="group p-6 bg-card rounded-2xl border border-border hover:shadow-lg transition-all duration-300"
+              className="group p-6 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
             >
               <div className="mb-4">
-                <span className="text-4xl font-bold text-foreground">{benefit.stat}</span>
+                <span className="text-4xl font-bold text-primary">{benefit.stat}</span>
                 <span className="block text-sm text-muted-foreground mt-1">{benefit.statLabel}</span>
               </div>
               <h3 className="text-lg font-semibold text-card-foreground mb-2">

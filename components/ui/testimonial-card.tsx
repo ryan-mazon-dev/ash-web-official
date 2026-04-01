@@ -25,7 +25,7 @@ export function TestimonialCard({ name, role, location, quote, rating }: Testimo
         &quot;{quote}&quot;
       </blockquote>
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center font-semibold text-secondary-foreground">
+        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-semibold text-primary">
           {name.charAt(0)}
         </div>
         <div>

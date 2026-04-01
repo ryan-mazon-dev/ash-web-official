@@ -69,7 +69,7 @@ export default function CaseStudiesPage() {
                 { stat: "24hrs", label: "Average Response Time" },
               ].map((item, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-4xl font-bold text-foreground">{item.stat}</div>
+                  <div className="text-4xl font-bold text-primary">{item.stat}</div>
                   <div className="mt-2 text-muted-foreground">{item.label}</div>
                 </div>
               ))}

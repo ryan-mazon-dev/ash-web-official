@@ -49,7 +49,7 @@ export function CaseStudyCard({
             <ul className="space-y-2">
               {results.map((result, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckIcon className="w-5 h-5 mt-0.5 text-accent flex-shrink-0" />
+                  <CheckIcon className="w-5 h-5 mt-0.5 text-success flex-shrink-0" />
                   <span className="text-muted-foreground">{result}</span>
                 </li>
               ))}

@@ -21,7 +21,7 @@ export function FAQSection() {
           {faqs.map((faq, index) => (
             <div
               key={faq.id}
-              className="bg-card rounded-xl border border-border overflow-hidden"
+              className="bg-card rounded-xl border border-border overflow-hidden transition-colors hover:border-primary/30"
             >
               <button
                 className="w-full px-6 py-5 flex items-center justify-between text-left"

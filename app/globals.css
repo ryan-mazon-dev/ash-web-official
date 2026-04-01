@@ -1,20 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8f6f3;
-  --foreground: #1a1a1a;
+  --background: #f8fafb;
+  --foreground: #1e293b;
   --card: #ffffff;
-  --card-foreground: #1a1a1a;
-  --primary: #1a1a1a;
+  --card-foreground: #1e293b;
+  --primary: #0d9488;
   --primary-foreground: #ffffff;
-  --secondary: #f0ede8;
-  --secondary-foreground: #1a1a1a;
-  --muted: #e8e4dd;
-  --muted-foreground: #6b6b6b;
-  --accent: #0066cc;
+  --secondary: #f0fdfa;
+  --secondary-foreground: #134e4a;
+  --muted: #e2e8f0;
+  --muted-foreground: #64748b;
+  --accent: #0891b2;
   --accent-foreground: #ffffff;
-  --border: #e0dcd4;
-  --ring: #1a1a1a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --success: #10b981;
+  --success-foreground: #ffffff;
+  --warning: #f59e0b;
+  --warning-foreground: #1e293b;
+  --border: #e2e8f0;
+  --ring: #0d9488;
   --radius: 0.75rem;
 }
 
@@ -31,10 +37,16 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
   --radius: var(--radius);
-  --font-sans: 'Geist', 'Geist Fallback', sans-serif;
+  --font-sans: 'Inter', 'Inter Fallback', sans-serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
 }
 

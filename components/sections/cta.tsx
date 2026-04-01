@@ -5,7 +5,7 @@ export function CTASection() {
   return (
     <section id="cta" className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-primary rounded-3xl overflow-hidden">
+        <div className="relative bg-primary rounded-3xl overflow-hidden shadow-xl">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
