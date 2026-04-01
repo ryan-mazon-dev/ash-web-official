@@ -14,11 +14,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Medsure - Know Your Coverage Before You Book",
-  description: "Stop calling around to verify insurance. Upload your info, tell us which providers you're considering, and get clear answers about your coverage in hours, not days.",
-  keywords: ["insurance verification", "healthcare", "in-network providers", "coverage check", "medical insurance"],
+  description:
+    "Stop calling around to verify insurance. Upload your info, tell us which providers you're considering, and get clear answers about your coverage in hours, not days.",
+  keywords: [
+    "insurance verification",
+    "healthcare",
+    "in-network providers",
+    "coverage check",
+    "medical insurance",
+  ],
   openGraph: {
     title: "Medsure - Know Your Coverage Before You Book",
-    description: "Stop calling around to verify insurance. Get clear answers about your coverage in hours, not days.",
+    description:
+      "Stop calling around to verify insurance. Get clear answers about your coverage in hours, not days.",
     type: "website",
   },
 };
