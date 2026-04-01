@@ -6,14 +6,16 @@ interface LogoProps {
 
 export function Logo({ className = "", showText = true, size = "md" }: LogoProps) {
   const sizes = {
-    sm: { icon: "w-7 h-7", text: "text-lg" },
-    md: { icon: "w-9 h-9", text: "text-xl" },
-    lg: { icon: "w-12 h-12", text: "text-2xl" },
+    sm: { icon: "w-7 h-7", text: "text-lg", gap: "gap-2" },
+    md: { icon: "w-8 h-8", text: "text-xl", gap: "gap-2.5" },
+    lg: { icon: "w-10 h-10", text: "text-2xl", gap: "gap-3" },
   };
 
   return (
-    <div className={`flex items-center gap-2.5 ${className}`}>
-      {/* Logo Icon - Modern geometric medical shield with M letterform */}
+    <div className={`flex items-center ${sizes[size].gap} ${className}`}>
+      {/* Logo Mark - Abstract "M" formed by two overlapping arcs
+          Represents connection, verification, and assurance through 
+          interlocking forms that create a sense of completeness */}
       <div className={`${sizes[size].icon} relative`}>
         <svg
           viewBox="0 0 40 40"
@@ -21,41 +23,36 @@ export function Logo({ className = "", showText = true, size = "md" }: LogoProps
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-full"
         >
-          {/* Shield base with rounded corners */}
+          {/* Left arc - represents the patient/user side */}
           <path
-            d="M20 2C12.5 2 6 5 6 5V18C6 28 20 38 20 38C20 38 34 28 34 18V5C34 5 27.5 2 20 2Z"
-            className="fill-primary"
+            d="M8 32C8 18.745 18.745 8 32 8"
+            stroke="currentColor"
+            strokeWidth="5"
+            strokeLinecap="round"
+            className="text-primary"
           />
-          {/* Inner highlight gradient effect */}
+          {/* Right arc - represents assurance/verification */}
           <path
-            d="M20 4C13.5 4 8 6.5 8 6.5V18C8 26.5 20 35 20 35C20 35 32 26.5 32 18V6.5C32 6.5 26.5 4 20 4Z"
+            d="M32 32C32 18.745 21.255 8 8 8"
+            stroke="currentColor"
+            strokeWidth="5"
+            strokeLinecap="round"
+            className="text-accent"
+          />
+          {/* Center point - the moment of verification/certainty */}
+          <circle
+            cx="20"
+            cy="20"
+            r="3"
             className="fill-primary"
-            fillOpacity="0.9"
-          />
-          {/* Medical cross / plus sign - centered */}
-          <rect
-            x="18"
-            y="11"
-            width="4"
-            height="14"
-            rx="1"
-            className="fill-primary-foreground"
-          />
-          <rect
-            x="13"
-            y="16"
-            width="14"
-            height="4"
-            rx="1"
-            className="fill-primary-foreground"
           />
         </svg>
       </div>
 
-      {/* Logo Text */}
+      {/* Logo Text - Clean typography with subtle color accent */}
       {showText && (
-        <span className={`${sizes[size].text} font-bold tracking-tight text-foreground`}>
-          Med<span className="text-primary">sure</span>
+        <span className={`${sizes[size].text} font-semibold tracking-tight text-foreground`}>
+          med<span className="text-primary">sure</span>
         </span>
       )}
     </div>
@@ -63,33 +60,35 @@ export function Logo({ className = "", showText = true, size = "md" }: LogoProps
 }
 
 // Compact icon-only version for favicons and small spaces
-export function LogoIcon({ className = "" }: { className?: string }) {
+export function LogoIcon({ className = "", size = 32 }: { className?: string; size?: number }) {
   return (
     <svg
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-8 h-8 ${className}`}
+      width={size}
+      height={size}
+      className={className}
     >
       <path
-        d="M20 2C12.5 2 6 5 6 5V18C6 28 20 38 20 38C20 38 34 28 34 18V5C34 5 27.5 2 20 2Z"
+        d="M8 32C8 18.745 18.745 8 32 8"
+        stroke="currentColor"
+        strokeWidth="5"
+        strokeLinecap="round"
+        className="text-primary"
+      />
+      <path
+        d="M32 32C32 18.745 21.255 8 8 8"
+        stroke="currentColor"
+        strokeWidth="5"
+        strokeLinecap="round"
+        className="text-accent"
+      />
+      <circle
+        cx="20"
+        cy="20"
+        r="3"
         className="fill-primary"
-      />
-      <rect
-        x="18"
-        y="11"
-        width="4"
-        height="14"
-        rx="1"
-        className="fill-primary-foreground"
-      />
-      <rect
-        x="13"
-        y="16"
-        width="14"
-        height="4"
-        rx="1"
-        className="fill-primary-foreground"
       />
     </svg>
   );
